@@ -1,0 +1,22 @@
+{
+  "name": "weatherview",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marquezmiko/WeatherView.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marquezmiko/WeatherView/issues"
+  },
+  "homepage": "https://github.com/marquezmiko/WeatherView#readme",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}

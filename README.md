@@ -1,7 +1,9 @@
 # WeatherView
 Original idea to be continued later - get current weather conditions and display instagrams and tweets with related hashtags
 
-First attempt to use Node.js and MongoDB in a functioning SPA
+Use OpenWeather API with api key provided
+
+First attempt to use Node.js and MongoDB in a functioning SPA!
 
 ## Application
 * Can specify units

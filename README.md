@@ -1,5 +1,7 @@
 # WeatherView
-Original idea to be continued later - get current weather conditions and display instagrams and tweets with related hashtags
+Original idea to be continued later:<br>
+*get current weather conditions and display instagrams and tweets with related hashtags*
+*partly inspired by http://youarelistening.to/newyork*
 
 Use OpenWeather API with api key provided
 

@@ -1,7 +1,10 @@
 doctype html
+//Layout file to call overall stylesheet, jQuery, and global js file
 html
   head
     title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/stylin.css')
   body
     block content
+    script(src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js')
+    script(src='/javascripts/global.js')

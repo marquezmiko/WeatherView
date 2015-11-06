@@ -1,5 +1,72 @@
+
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+    h1= title
+    p City,Country tuples stored in a MongoDB database, Collection name:cityList
+    p Clicking on a city will call the OpenWeather API with that city,country as a parameter
+    p Can type in desired units, then re-click on a city name
+    p NOTE: Form at the bottom is to merely query the api, without going through the MongoDB database.
+
+    // Index Layout
+    #index
+
+        // Unit Selection
+        #unitSelect
+            h4 Type in desired units. Current units is <span id='temperatureUnit'></span>
+            fieldset
+                input#inputUnits(type='text', placeholder='kelvin,metric,imperial')
+                br
+                button#btnUnit Change Units
+
+        // Weather info for each city, calls OpenWeather API
+        #cityInfo
+            h2 Weather Info
+            p
+                strong City:
+                | <span id='cityName'></span>
+                br
+                strong Latitude:
+                |  <span id='latitude'></span>
+                br
+                strong Longitude:
+                |  <span id='longitude'></span>
+                br
+                strong Current Condition:
+                |  <span id='currentCondition'></span>
+                br
+                strong High:
+                |  <span id='highTemp'></span>
+                br
+                strong Low:
+                |  <span id='lowTemp'></span>
+
+        // List of Cities currently in database
+        #cityList
+            h2 City List
+            table
+                thead
+                    th City
+                    th Country
+                    th Delete
+                tbody
+
+        // Add a City (City,Country)-tuples in MongoDB cityList database
+        #addCity
+            h2 Add City
+            fieldset
+                input#inputCityName(type='text', placeholder='City')
+                input#inputCountryName(type='text', placeholder='Country (ie: US,UK,etc.)')
+                br
+                button#btnAddCity Add City
+
+        // Plain API query
+        #queryAPI
+            h2 Enter a City Name or Zip Code:
+            fieldset
+                input#queryCity(type='text', placeholder='City')
+                input#queryCountry(type='text' placeholder='Country (ie: US,UK,etc.)')
+                br
+                input#queryZip(type='text', placeholder='Zip Code(US)')
+                br
+                button#btnQuery Query API
